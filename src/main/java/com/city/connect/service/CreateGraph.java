@@ -4,6 +4,8 @@ import com.city.connect.domain.Graph;
 public class CreateGraph {
 	
 	public static Graph createGraph() {
+		
+		
 	    Graph graph = new Graph();
 	    graph.addVertex("Boston");
 	    graph.addVertex("Newyork");
