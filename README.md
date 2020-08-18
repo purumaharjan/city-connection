@@ -2,11 +2,11 @@ The program is developed using Spring Boot & Java (1.8 or above) which determine
 
 The Cities connection logic have implemented reading the city.txt file from classpath and adding the cities using Map<String, Set<String>> where the data structure for storing the connected data for the network relationships between the cities roads.
 
-It is Restful API to retrieve the status as YES/NO between connected cities which are taking as the http query parameters(i.e origin and destination). It is standalone Spring based application.
+It is standalone Spring based application. The API take two HTTP query parameters(i.e origin and destination) as input and provide the response status as "YES" for connected cities and "NO" for not connected. 
 
-The Endpoint URL for the API is http://localhost:8081/connected, where context path is specified in application .properties.
+The Endpoint URL for the API is http://localhost:8080/connected, where server port is specified in application.properties.
 
-Similary, Mocikto and Junit framework is used for Unit testing code and Rest Template for integration testing. 
+Similary, Junit, Mocikto are used for Unit testing code and Rest Template for integration testing. 
 
 Description
 
