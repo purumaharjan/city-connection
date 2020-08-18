@@ -29,7 +29,7 @@ public class ConnectControllerTest {
 	@Test
 	public void testCityConnected() throws IOException {
 		String origin = "Boston";
-		String destination = "Philadelphia";
+		String destination = "Newark";
 		
 		when(connectService.isCityConnection(origin, destination)).thenReturn(true);
 		String isConnected = connectController.getCityConnected(origin, destination);
