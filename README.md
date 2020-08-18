@@ -12,4 +12,4 @@ Description
 
 GET : http://localhost:8080/connected?origin=city1&destination=city2 is used to fetch the status whether the cites between origin and destination are connected or not.
 
-Also, swagger documentation are also configured by : http://localhost:8081/swagger-ui.html#
+Also, swagger documentation are also configured by : http://localhost:8080/swagger-ui.html#
