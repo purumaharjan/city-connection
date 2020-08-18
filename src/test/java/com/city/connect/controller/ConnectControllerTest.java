@@ -1,5 +1,10 @@
 package com.city.connect.controller;
 
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.io.IOException;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -22,7 +27,26 @@ public class ConnectControllerTest {
 	}
 	
 	@Test
-	public void testConnection() {
+	public void testCityConnected() throws IOException {
+		String origin = "Boston";
+		String destination = "Philadelphia";
+		
+		when(connectService.isCityConnection(origin, destination)).thenReturn(true);
+		String isConnected = connectController.getCityConnected(origin, destination);
+		
+		assertEquals(isConnected, "YES");
+		
+	}
+	
+	@Test
+	public void testCityNotConnected() throws IOException {
+		String origin = "Philadelphia";
+		String destination = "Albany";
+		
+		when(connectService.isCityConnection(origin, destination)).thenReturn(false);
+		String isConnected = connectController.getCityConnected(origin, destination);
+		
+		assertEquals(isConnected, "NO");
 		
 	}
 

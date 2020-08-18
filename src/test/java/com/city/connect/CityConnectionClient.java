@@ -7,6 +7,11 @@ import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+/**
+ * 
+ * @author purushottammaharjan
+ *
+ */
 public class CityConnectionClient {
 
 	public static final String REST_SERVICE_URI = "http://localhost:8080/connected";
@@ -30,7 +35,8 @@ public class CityConnectionClient {
 
 	public static void main(String args[]) {
 		
-		System.out.print(getConnectionStatus("boston", "Newark"));
+		System.out.print(getConnectionStatus("Boston", "Newark"));
+//		System.out.print(getConnectionStatus("Boston", "Philadelphia"));
 		
 		
 

@@ -1,4 +1,4 @@
-Boston, New York
+Boston, Newyork
 Philadelphia, Newark
 Newark, Boston
 Trenton, Albany
